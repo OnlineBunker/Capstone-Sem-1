@@ -74,7 +74,7 @@ body {
 
 .hero-image {
     width: 100%;
-    border-radius: 56px;
+    border-radius: 25px;
     margin-top: 48px;
     aspect-ratio: 2;
     object-fit: cover;
@@ -101,6 +101,7 @@ body {
 
 .project-image {
     width: 100%;
+    border-radius: 3px;
     aspect-ratio: 1.5;
     object-fit: cover;
 }
@@ -332,6 +333,10 @@ body {
 .follow-btn:focus {
     background-color: var(--primary-text);
     color: var(--primary-bg);
+}
+
+.follow-btn-link {
+    text-decoration: none; /* Remove default underline from the link */
 }
 
 .visually-hidden {
