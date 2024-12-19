@@ -3,65 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrungePort Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <title>GrungePort</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="/" class="logo">GrungePort</a>
-        <button class="menu-button">☰</button>
-        <nav id="nav">
-            <a href="/">Home</a>
-            <a href="/projects">Projects</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-        </nav>
-    </header>
+    <div class="grunge-portfolio">
+        <header class="header" role="banner">
+            <div class="logo">GrungePort</div>
+            <nav class="nav" role="navigation">
+                <a href="#home" aria-current="page">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-    <main>
-        <h1 id="title">Unleash Your Creativity</h1>
-        <img id="homepage-photo" src="./Images/homepage-photo.jpg" alt="homepage-photo">
-        <div class="cards">
-            <div class="box"><img class="imeg" src="./Images/image-1.jpg" alt=""><h4>Urban Decay</h4><h6>Photography</h6></div>
-            <div class="box"><img class="imeg" src="./Images/image-2.jpg" alt=""><h4>Raw Art</h4><h6>Mixed Media</h6></div>
-            <div class="box"><img class="imeg" src="./Images/image-3.jpg" alt=""><h4>Street Vibes</h4><h6>Digital Art</h6></div>
-        </div>
-        <div class="cards">
-            <div class="box"><img class="imeg" src="./Images/image-4.jpg" alt=""><h4>Grunge Textures</h4><h6>Graphic  Design</h6></div>
-            <div class="box"><img class="imeg" src="./Images/image-5.jpg" alt=""><h4>Distressed Elements</h4><h6>Illustration</h6></div>
-            <div class="box"><img class="imeg" src="./Images/image-6.jpg" alt=""><h4>Rebellious Aesthetics</h4><h6>Photography</h6></div>
-        </div>
-        <div class="cards">
-            <div class="box"><img class="imeg" src="./Images/image-7.jpg" alt=""><h4>Chaotic Patterns</h4><h6>Mixed Media</h6></div>
-            <div class="box"><img class="imeg" src="./Images/image-8.jpg" alt=""><h4>Vintage Vibe</h4><h6>Graphic Design</h6></div>
-            <div class="box"><img class="imeg" src="./Images/image-9.jpg" alt=""><h4>Neon Accents</h4><h6>Digital Art</h6></div>
-        </div>
+        <main role="main">
+            <section class="hero" id="home">
+                <h1>Unleash Your Creativity</h1>
+                <img src="Images/homepage-photo.jpg" alt="Creative showcase hero image" class="hero-image">
+            </section>
 
-        <div class="hero-content">
-            <p class="hero-text">
-                Welcome to my portfolio. Here you'll find a collection of my latest projects, all inspired by the raw, edgy textures and rebellious aesthetics of street culture. Dive in and discover the creativity that fuels my work.
-            </p>
-        </div>
-
-        <div class="hero-content letter">
-            <h1 id="hero-head">
-                I am a visual artist with a passion for grunge style. My work is inspired by the raw energy of urban environments and the chaotic beauty of distressed elements.
-            </h1>
-        </div>
-
-        <div class="container-two">
-            <div class="services-two">
-                <h2 class="title-two">What I Do</h2>
-                <div class="categories">
-                    <div class="category">Photography</div>
-                    <div class="category">Graphic Design</div>
-                    <div class="category">Mixed Media</div>
-                    <div class="category">Digital Art</div>
-                    <div class="category">Illustration</div>
+            <section class="projects" id="projects" aria-label="Project Gallery">
+                <div class="project-row">
+                    <article class="project-card">
+                        <img src="Images/image-1.jpg" alt="Urban Decay Photography Project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Urban Decay</h3>
+                            <span class="project-type">Photography</span>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <img src="Images/image-2.jpg" alt="Raw Art Mixed Media Project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Raw Art</h3>
+                            <span class="project-type">Mixed Media</span>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <img src="Images/image-3.jpg" alt="Street Vibes Digital Art Project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Street Vibes</h3>
+                            <span class="project-type">Digital Art</span>
+                        </div>
+                    </article>
                 </div>
-            </div>
-        </div>
 
-    </main>
+                <div class="project-row">
+                    <article class="project-card">
+                        <img src="Images/image-4.jpg" alt="Grunge Textures Graphic Design Project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Grunge Textures</h3>
+                            <span class="project-type">Graphic Design</span>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <img src="Images/image-5.jpg" alt="Distressed Elements Illustration Project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Distressed Elements</h3>
+                            <span class="project-type">Illustration</span>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <img src="Images/image-6.jpg" alt="Rebellious Aesthetics Photography Project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Rebellious Aesthetics</h3>
+                            <span class="project-type">Photography</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="project-row">
+                    <article class="project-card">
+                        <img src="Images/image-7.jpg" alt="Chaotic Patterns Mixed Media Project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Chaotic Patterns</h3>
+                            <span class="project-type">Mixed Media</span>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <img src="Images/image-8.jpg" alt="Vintage Vibe Graphic Design Project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Vintage Vibe</h3>
+                            <span class="project-type">Graphic Design</span>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <img src="Images/image-9.jpg" alt="Neon Accents Digital Art Project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Neon Accents</h3>
+                            <span class="project-type">Digital Art</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="intro">
+                <p>Welcome to my portfolio. Here you'll find a collection of my latest projects, all inspired by the raw, edgy textures and rebellious aesthetics of street culture. Dive in and discover the creativity that fuels my work.</p>
+            </section>
+
+            <section class="about" id="about">
+                <p>I am a visual artist with a passion for grunge style. My work is inspired by the raw energy of urban environments and the chaotic beauty of distressed elements.</p>
+            </section>
+
+            <section class="services" aria-label="Services">
+                <h2 class="services-title">What I Do</h2>
+                <div class="services-list">
+                    <div class="services-row">
+                        <span class="service-item">Photography</span>
+                        <span class="service-item">Graphic Design</span>
+                    </div>
+                    <div class="services-row">
+                        <span class="service-item">Mixed Media</span>
+                        <span class="service-item">Digital Art</span>
+                    </div>
+                    <div class="services-row">
+                        <span class="service-item">Illustration</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials" aria-label="Client Testimonials">
+                <h2 class="testimonials-title">What My Clients Say</h2>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="" alt="Alexandra Wolfe" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <span class="testimonial-name">Alexandra Wolfe</span>
+                                <span class="testimonial-role">Art Director</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-quote">Amazing creativity and a unique style!</p>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="" alt="Jordan Blake" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <span class="testimonial-name">Jordan Blake</span>
+                                <span class="testimonial-role">Graphic Designer</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-quote">Transforms raw elements into stunning art.</p>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="" alt="Morgan Lee" class="testimonial-avatar">
+                            <div class="testimonial-info">
+                                <span class="testimonial-name">Morgan Lee</span>
+                                <span class="testimonial-role">Photographer</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-quote">A true visionary in the grunge art scene.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <form class="contact-form" action="" method="POST">
+                    <div class="contact-header">
+                        <h2 class="contact-title">Contact Me</h2>
+                        <p class="contact-subtitle">Fill out the form below to get in touch.</p>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="input1" class="visually-hidden">Contact form field 1</label>
+                        <input type="text" id="input1" class="input-field" aria-label="Contact form field 1" required>
+                        
+                        <label for="input2" class="visually-hidden">Contact form field 2</label>
+                        <input type="text" id="input2" class="input-field" aria-label="Contact form field 2" required>
+                        
+                        <label for="input3" class="visually-hidden">Contact form field 3</label>
+                        <input type="text" id="input3" class="input-field" aria-label="Contact form field 3" required>
+                        
+                        <label for="input4" class="visually-hidden">Contact form field 4</label>
+                        <input type="text" id="input4" class="input-field" aria-label="Contact form field 4" required>
+                        
+                        <label for="input5" class="visually-hidden">Contact form field 5</label>
+                        <input type="text" id="input5" class="input-field" aria-label="Contact form field 5" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="button" class="skip-btn">Skip</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="footer-content">
+                <span class="copyright">© 2023 GrungePort</span>
+                <button class="follow-btn">Follow Me</button>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
